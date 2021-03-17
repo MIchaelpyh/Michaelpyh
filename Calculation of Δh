@@ -4,3 +4,5 @@ K = ones(size(p1));
 for i = 1:40
 K(i) = fzero(@(x) 0.1813*x^3 +186.9*p2(i)*x^2 +2*10^6*p2(i)^2*x - p1(i)*55*10^-6 ,0.01);
 end
+# This is a demonstration to solve Δh with a = 55 μm. Parameters in line 5 is calculated based on the materials properties and surface geometries. All parameters in line 5 should also be changed accrodingly if
+different materials or geometry is adopted. For each surface geometry, a specific set of parameters for line 5 is required#
